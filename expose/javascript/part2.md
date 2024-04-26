@@ -41,20 +41,51 @@ D: student['Favorite Teacher'].name
 E: student.courseLoad[0]
 
 
-### Question 11:
+### Question 13:
+A: `32`. `32` is a string type. Number 2 will change to string and then combine them together using `+` sign.
+B: `1`. `1` is a number type. String `3` will change to number type and `-` sign can only be used in number calculation.
+C: `3`. `3` is a number type. `null` will change to number 0 and `3+0` is equal to 3.
+D: `3null`. `3null` is a string type. string `3` and `null` will combine together and formed `3null`.
+E: `4`. `4` is a number type. `true` will change to number 1 and `1+3 = 4`
+F: `0`. `0` is a number type. Since both are not string type, and both can change to number `0`. `0+0=0`. 
+G: `3undefined`. `3undefined` is a string type. `3` is a string and `undefined` will be change to string type. So they will form `3undefined`.
+H: `NaN`. This is Not a Number. Since `-` sign cannot be used in string and it also cannot be changed to number. Thus, it will output `NaN`
 
-### Question 11:
+### Question 14:
+A: true. They are different type, so string `2` will change to number type. `2>1` is true.
+B: false. Two string will compare from the first digit. `'2' < '1'` is false.
+C: true. String `2` will change to number. `2=2`is true. 
+D: false. `===` will not perform type change. There are two different types and it will output false.
+E: false. `true` will convert to number `1` and `1==2` is false. 
+F: true. `Boolean(2)` is true since non-zero number in boolean is true. Both are same type, so it is true. 
 
-### Question 11:
+### Question 15:
+`==` will attempt to conver the value into same type and then take a comparison. Different type can also be compared. However, `===` can only used to compare in same type. If the value are two different type, it will directly return false.
 
-### Question 11:
+### Question 16:
+```
+for (let p in statistics) {
+    if (p.startsWith('r') || statistics[p] % 2 === 1) {
+        console.log(statistics[p]);
+    }
+}
+```
 
-### Question 11:
+### Question 17:
+The result will be `[2, 4, 6]`. We pass an array and an function to `modifyArray` function. Within the function, it will run `for loop` and iterate each value in array. `callback(array[i])` will run `doSomething(array[i])` so it will return `num*2`. Then, the value will be pushed into `newArr`. After iterate all value in this array, the output will be `[2, 4, 6]`.
 
-### Question 11:
+### Question 18:
+```
+function printCurrentTime(){
+    let d = new Date();
+    let time = d.toLocaleTimeString();
+    console.log(time);
+}
 
-### Question 11:
+setInterval(printCurrentTime, 1000);
+```
 
-### Question 11:
+### Question 19:
+The output will be `1 4 3 2`. The reason is `console.log(1) and console.log(4)` will directly output without call any function. Since `setTimeout(function() {console.log(2);}, 1000);` will be called, but it have to wait 1 second and it will be slower than `setTimeout(function() {console.log(3);}, 0);`
 
 
