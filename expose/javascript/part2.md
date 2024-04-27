@@ -47,20 +47,32 @@ E: student.courseLoad[0]
 
 ### Question 13:
 A: `32`. `32` is a string type. Number 2 will change to string and then combine them together using `+` sign.
+
 B: `1`. `1` is a number type. String `3` will change to number type and `-` sign can only be used in number calculation.
+
 C: `3`. `3` is a number type. `null` will change to number 0 and `3+0` is equal to 3.
+
 D: `3null`. `3null` is a string type. string `3` and `null` will combine together and formed `3null`.
+
 E: `4`. `4` is a number type. `true` will change to number 1 and `1+3 = 4`
+
 F: `0`. `0` is a number type. Since both are not string type, and both can change to number `0`. `0+0=0`. 
+
 G: `3undefined`. `3undefined` is a string type. `3` is a string and `undefined` will be change to string type. So they will form `3undefined`.
+
 H: `NaN`. This is Not a Number. Since `-` sign cannot be used in string and it also cannot be changed to number. Thus, it will output `NaN`
 
 ### Question 14:
 A: true. They are different type, so string `2` will change to number type. `2>1` is true.
+
 B: false. Two string will compare from the first digit. `'2' < '1'` is false.
+
 C: true. String `2` will change to number. `2=2`is true. 
+
 D: false. `===` will not perform type change. There are two different types and it will output false.
+
 E: false. `true` will convert to number `1` and `1==2` is false. 
+
 F: true. `Boolean(2)` is true since non-zero number in boolean is true. Both are same type, so it is true. 
 
 ### Question 15:
