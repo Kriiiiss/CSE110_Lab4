@@ -35,9 +35,13 @@ This function will return an array `[50, 100, 150]`. The `discounted` is defined
 
 ### Question 12:
 A: student.name
+
 B: student['Grad Year']
+
 C: student.greeting()
+
 D: student['Favorite Teacher'].name
+
 E: student.courseLoad[0]
 
 
